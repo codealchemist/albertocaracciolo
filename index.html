@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Alberto Caracciolo</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Alberto Caracciolo, a vanguardist tango musician from the 60s." />
+    <meta name="keywords" content="alberto caracciolo,tango,music,argentina" />
+
+    <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+    <!-- build:js app.min.js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/howler.min.js"></script>
+    <!-- endbuild -->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <noscript>
+      <link rel="stylesheet" href="css/skel.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/style-xlarge.css" />
+    </noscript>
+  </head>
+  <body id="top" onkeydown="onKey(event.keyCode)">
+    <!-- Header -->
+      <header id="header" class="skel-layers-fixed">
+        <h1><a href="#home">ALBERTO CARACCIOLO</a></h1>
+        <nav id="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#listen">Listen</a></li>
+            <li><a href="#scores">Scores</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <!-- Banner -->
+      <section id="banner">
+        <div class="banner-background blur"></div>
+        <div class="inner">
+          <h2>Alberto Caracciolo</h2>
+          <p>A vanguardist tango musician from the 60s.</p>
+        </div>
+      </section>
+
+    <!-- One -->
+      <section id="one" class="wrapper style1">
+        <header class="major">
+          <h2>Biography</h2>
+          <p>Son of Italians, born in Buenos Aires.</p>
+        </header>
+
+        <div class="container">
+          <div class="row">
+            <div>
+              <p>
+                <b>Alberto Pascual Caracciolo</b> (1918-1994) was a brilliant Tango musician. He was a musical arranger, orchestra director, composer and bandoneón player.
+              </p>
+              <p>
+                He was respected and well known by his colleagues rather than by the public in general for Caracciolo always chose to hold a low profile and he acted on different important radios and occasionally on TV but he did not point to having a massive difussion of his music.
+              </p>
+              <p>
+                Now, his friends and relatives would like to make his music known, for he has been mentioned in different newspapers, magazines, radio and TV, but little music of his is sounding on the radios or other places where Tango is heard or danced.
+              </p>
+              <p>
+                He was born in <b>Palermo</b>, <b>Buenos Aires</b>, on the 23rd of March 1918, he began his musical studies at the age of 8, and at 16 he started playing bandoneón in <b>Antonio Arcieri's</b> orchestra.
+                He played bandoneón for different famous orchestras, such as the ones of <b>Joaquín Do Reyes</b>, <b>Ángel D'Agostino</b>, <b>Manuel Buzón</b>, <b>Victor Braña</b>, <b>Jorge Caldara</b> and many others.
+              </p>
+              <p>
+                Although he was a Tango renewer following a style of his own, he played traditional Tango in the <em>“De Ayer... y de Siempre”</em> L.P., produced by <b>Discomundo</b>, for which he created <b>Quinteto Añoranzas</b>, including flute, which was an instrument greatly valued in the old traditional groups (according to <b>Roberto Selles</b>, Tango journalist and historian).
+              </p>
+              <p>
+                He also played jazz although in a minor scale, he made musical arrangements for international publishers, and he was a Music Counsellor for <b>Odeón</b> (Argentina), in the late 60's and early 70's.
+              </p>
+              <p>
+                Caracciolo is the author of <em>“Tema de Tango en Re Menor”</em>, <em>“Preludio”</em>, <em>“Etéreo”</em>, <em>“Chiqui”</em> (dedicated to his wife), <em>“Con Rumbo al Cielo”</em> (dedicated to his father), <em>“Réquiem para un Gomía”</em>, (dedicated to <b>Gardel</b>), and many others which have lyrics by famous tango poets.
+              </p>
+
+              <!-- <ul class="actions">
+                <li><a href="#elements" class="button big alt">Learn More</a></li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Two -->
+      <section id="listen" class="wrapper style2">
+        <header class="major">
+          <h2>Listen</h2>
+          <p>Enjoy Caracciolo's music :)</p>
+        </header>
+        <div class="container">
+          <div class="row">
+            <div class="8u">
+              <ul class="songs">
+                <li onclick="play(0, this)">
+                  01. Los Mareados - Tango (J.C. Cobián y E. Cadícamo)
+                </li>
+                <li onclick="play(1, this)">
+                  02. Tema de Tango en Re Menor - Tango (A. Caracciolo)
+                </li>
+                <li onclick="play(2, this)">
+                  03. Templo 59 - Tango (A. Caracciolo)
+                </li>
+                <li onclick="play(3, this)">
+                  04. Gallo Ciego - Tango (Agustín Bardi)
+                </li>
+                <li onclick="play(4, this)">
+                  05. Desvelo - Tango (E. Bonessi y E. Cadícamo)
+                </li>
+                <li onclick="play(5, this)">
+                  06. Tierrita - Tango (Agustín Bardi y J. Fernández Blanco)
+                </li>
+                <li onclick="play(6, this)">
+                  07. El Motivo - Tango (Juan Carlos Cobián)
+                </li>
+                <li onclick="play(7, this)">
+                  08. Chiqui - Tango (A. Caracciolo)
+                </li>
+                <li onclick="play(8, this)">
+                  09. Desde el Alma - Vals (Rosita Melo, V. Pluma Vélez y Homero Manzi)
+                </li>
+                <li onclick="play(9, this)">
+                  10. Por la Vuelta - Tango, solo de Bandoneón (J. Tinelli y E. Cadícamo)
+                </li>
+                <li onclick="play(10, this)">
+                  11. Fuimos - Tango, solo de Bandoneón (J. Dames y Homero Manzi)
+                </li>
+                <li onclick="play(11, this)">
+                  12. La Última Curda - Tango, solo de Bandoneón (Aníbal Troilo y Cátulo Castillo)
+                </li>
+              </ul>
+            </div>
+
+            <div class="4u">
+              <img src="images/tangomania-cd.png">
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Three -->
+      <section id="scores" class="wrapper style1">
+        <div class="container">
+          <div class="row">
+            <div class="8u">
+              <section>
+                <h2>Scores</h2>
+                <p>
+                  Dolor (Tango) |
+                  <a href="https://www.dropbox.com/s/pmwtncru4w1bpvr/dolor-alberto-caracciolo-score.zip?dl=0" target="blank">Download</a>
+                  <br>
+                  <em>Letra y Música: Alberto Caracciolo y Azucena Maizani</em>
+                </p>
+                <hr>
+                <p>
+                  Templo 59 (Tango) |
+                  <a href="https://www.dropbox.com/s/3x3wrmj55lsfna2/templo-59.zip?dl=0" target="blank">Download</a>
+                  <br>
+                  <em>Música: Alberto Caracciolo</em>
+                </p>
+              </section>
+            </div>
+            <div class="4u">
+              <section id="lyrics">
+                <h3>Lyrics</h3>
+                <p>Dolor</p>
+                <em>
+                  Con su carga de esperanzas, con sus anhelos más puros<br>
+                  va el corazón por la vida expresando su fervor,<br>
+                  pensando en horas mejores que ha de brindarle el futuro<br>
+                  para calmar los agravios de las mentiras de amor.<br>
+                </em>
+
+                <ul class="actions" id="lyric-more-button-dolor">
+                  <li><a href="javascript:void(0)" class="button alt" onclick="showLyric('dolor')">View more</a></li>
+                </ul>
+                <em id="lyric-more-dolor" style="display:none">
+                  <br>
+                  Ilusiones que nos llevan a proseguir el camino<br>
+                  exaltando el entusiasmo para adelante marchar,<br>
+                  para arrancarle a la vida el secreto del destino,<br>
+                  el misterio de la vida que intentamos descifrar.<br>
+                  <br>
+                  Las ilusiones de un día<br>
+                  nos acercan al amor<br>
+                  y en las fuentes de alegría,<br>
+                  y en las fuentes de alegría<br>
+                  encontramos el dolor.<br>
+                  <br>
+                  Dolor que hiere profundo<br>
+                  destrozando la ilusión,<br>
+                  pues por caminos del mundo,<br>
+                  pues por caminos del mundo<br>
+                  se desgrana el corazón.<br>
+                  <br>
+                  Desde entonces la existencia ya no tiene más encanto<br>
+                  y aceptamos como carga el vivir sin emoción,<br>
+                  ya perdida la esperanza, la alegría se hace llanto<br>
+                  y en el alma sólo existe nada más que decepción.<br>
+                  <br>
+                  Derrotados por la vida no nos quedan ilusiones<br>
+                  nuestro mundo de esperanzas se ha deshecho en el rodar.<br>
+                  Y entre toda esa madeja de perfidias y traiciones<br>
+                  si se asoma otra esperanza... ¡la dejamos al pasar!<br>
+                </em>
+
+                <ul class="actions" id="lyric-less-button-dolor" style="display:none">
+                  <li><a href="javascript:void(0)" class="button alt" onclick="hideLyric('dolor')">View less</a></li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Footer -->
+      <footer id="footer">
+        <div class="container">
+          <div class="row double">
+            <div class="6u">
+              <div class="row collapse-at-2">
+                <div class="6u">
+                  <h3>TODOTANGO</h3>
+                  <ul class="alt">
+                    <li>
+                      <a href="http://www.todotango.com/english/artists/biography/949/Alberto-Caracciolo/" target="blank">
+                        Biography
+                      </a>
+                    </li>
+                    <li>
+                      <a href="http://www.todotango.com/english/history/chronicle/187/Vasallo-Confessions-of-a-bass-player:/" target="blank">
+                        Mentions
+                      </a>
+                    </li>
+                    <li>
+                      <a href="http://www.todotango.com/english/history/chronicle/584/Orquesta-Tipica-angel-DAgostino/" target="blank">
+                        Orquestas
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="6u">
+                  <h3>YOUTUBE</h3>
+                  <ul class="alt">
+                    <li><a href="https://youtu.be/hg0xpNQZVUw" target="blank">Lo Que Vendrá, by Astor Piazzolla</a></li>
+                    <li><a href="https://youtu.be/3PW62US2vEE" target="blank">Fuimos, by José Dames</a></li>
+                    <li><a href="https://youtu.be/YfGtMXNqnOU" target="blank">Con Rumbo Al Cielo</a></li>
+                    <li><a href="https://youtu.be/N_tG0MVcL1o" target="blank">Adiós Nonino, by Astor Piazzolla</a></li>
+                  </ul>
+                </div>
+
+                <div class="6u">
+                  <h3>WIKIPEDIA</h3>
+                  <ul class="alt">
+                    <li>
+                      <a href="https://en.wikipedia.org/wiki/Alberto_Caracciolo" target="blank">
+                        Biography
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="6u">
+              <h2>Thanks!</h2>
+              <p>
+                I thank you for learning more about Alberto Caracciolo and listening to
+                his music. This means a lot to me and my family. I sincerely hope you
+                enjoy it!
+              </p>
+              <p>
+                And if you do so, please, consider sharing this material with your friends and
+                family. Good music must be heard ;)
+              </p>
+              <!-- <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+              </ul> -->
+            </div>
+          </div>
+          <ul class="copyright">
+            <li>2017 v1.0</li>
+            <li>Web Development: <a href="http://albertomiranda.com.ar">Alberto Miranda</a></li>
+            <li>Texts: Nélida Miranda</li>
+          </ul>
+        </div>
+      </footer>
+
+      <div id="player">
+        <p id="current-song-name"></p>
+
+        <div class="controls">
+          <i class="btn btn-close" onclick="hidePlayer()"></i>
+          <i id="player-button" class="btn btn-play" onclick="playStop()"></i>
+        </div>
+      </div>
+  </body>
+</html>
